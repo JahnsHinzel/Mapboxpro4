@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mapbox PRO 4 - Into the Wild</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.44.1/mapbox-gl.css' rel='stylesheet' />
+     <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.44.1/mapbox-gl.js'></script>
+
+    
+    
+    <style>
+        #map {
+            height: 400px;
+            width: 50%;
+            float: left;
+            margin-right: 30px;
+            margin-top: 50px;
+            
+            }
+        
+        .marker {
+  background-image: url('images/familyittw.jpg');
+  background-size: cover;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+    </style>
+    
+</head>
+<body>
+    
+    <section id="fp-background"></section>    
+    
+    
+    <!-- the map will be loaded to #map--> 
+    
+   
+<div id='map'></div>
+<br/>
+<button id='fly'>Fly</button>
+
+    <div class='clearfix prose'>
+        <div class='col1 center keyline-right'><div id='map'></div></div>
+        <div class='col1 center keyline-right'><h2 id="annandale">1. Annandale, VA, USA</h2></div>
+        <div class='col1 center keyline-right'><p class="rubrik">Annadale, VA USA var stedet hvor Chris McCandless voksede op. Hans far var uddannet ingeniøre, med en god stilling for NASA, indtil den dag hvor hans far og mor startede deres egen forretning, og nu kunne arbejde fra hjemmet. På grund af alt den tid faren og moren nu havde sammen, begyndte de nu at være verbalt grove overfor hinanden, og i det hele taget ret bitre. Dette efterlod Chris og hans søster Carine med 'ar på sjælen' i en meget lang periode.</p>
+        </div>
+    </div>
+    
+    
+  <div class='clearfix prose'>
+      <div class='col1 center keyline-right'><div id='map2'></div></div>
+    <div class='col1 center keyline-right'><h2 id="emory">2. Emory University</h2></div>
+      <div class='col1 center keyline-right'><p class="rubrik">Efter at Chris afsluttede High School i Virginia, går Chris nu på Emory University i fire år, hvor man har utroligt gode karakterer. I hans sidste år på studiet, flytter han ind i sin egen lejlighed, som kun indeholdte det mest basale, såsom strøm og vand. Det var også på Emory University, at hans forældre og søster sidst så ham, inden han 'flygtede fra hverdagen' og stak af mod alaska. </p>
+        </div>
+      </div>
+    
+<div class="clearfix prose">
+    <div class='col1 center keyline-right'><div id='map3'></div></div>
+    <div class='col1 center keyline-right'><h2 id="emory">3. Detrital Wash, AZ</h2></div>
+    <div class='col1 center keyline-right'><p class="rubrik">I Detrital Wash, AZ fandt man Chris' bil, som var blevet revet rundt i en ørken-oversvømmelse, midt om natten, med Chris stadig indeni. Da man læser Chris' dagbog finder man ud af, at han kom sikkert ud af bilen, men at han begravede sit pas, sygesikring mm. ude i ørkenen, et sted hvor folk ikke ville finde dem. Dette gjorde han fordi han ikke ønskede at blive fundet, og fordi han synes det var en del sjovere at rejse uden nogen form for identitet. </p></div>
+                </div>    
+    
+    <div class="clearfix prose">
+    <div class="col1 center keyline-right"><h2 id="emory">4. Orick, CA, USA</h2></div>
+        <div class='col1 center keyling-right'><p class="rubrik">Efter at have rejst rundt i et par måneder på gåben, hvor Chris har levet af landet omkring ham. Møder han her et gammelt ægtepar, som kører rundt i en trailer. De spørger om han vil have et lift, hvilket han takker ja til. Han bor sammen med dem på stranden i et par dage, før han igen vandrede ud. Han blev meget tætte med dette par.</p></div>
+    </div>
+
+    
+     <div class="clearfix prose">
+    <div class="col1 center keyline-right"><h2 id="emory">5. Cut Bank, Mt 59427, USA</h2></div>
+        <div class='col1 center keyling-right'><p class="rubrik">Chris møder i denne by en ældre herre, som han bliver meget tæt med. Denne mand bliver nok også Chris' bedste ven på hele denne tur, og de tager ud og ser nogle forskellige ting i ørkenen sammen, inden han igen vandrer derud af. </p></div>
+    </div>
+    
+     <div class="clearfix prose">
+    <div class="col1 center keyline-right"><h2 id="emory">6. Salton City, CA, USA</h2></div>
+        <div class='col1 center keyling-right'><p class="rubrik">Efter mange måneder, hvor chris både har hiket, og sejlet i kano, møder Chris nu en ældre herre ude i ørkenen, som hedder Ronald Franz. Eftersom Ronald er en gammel mand, hjælper Chris ham i hjemmet, med en masse ting, som Ronald ikke havde kunnet gøre alene pga. hans alder. </p></div>
+    </div>
+    
+    <div class="clearfix prose">
+    <div class="col1 center keyline-right"><h2 id="emory">7. Carthage, SD</h2></div>
+        <div class='col1 center keyling-right'><p class="rubrik">Et af de sidste stop inden Chris bevæger sig ud mod Alaska, vender han tilbage til Wayne, og arbejder for ham i hans korn-mark/fabrik i nogle månder.  </p></div>
+    </div>
+    
+     <div class="clearfix prose">
+    <div class="col1 center keyline-right"><h2 id="emory">8. Fairbanks, AK, USA</h2></div>
+        <div class='col1 center keyling-right'><p class="rubrik">Chris tilbringer 3 dage på et bibliotek, hvor han her studerer om planter og bær. For at vide hvad der er spiseligt, og hvad der er dødeligt.   </p></div>
+    </div>
+    
+    <div class="clearfix prose">
+    <div class="col1 center keyline-right"><h2 id="emory">9. Stampede Trail</h2></div>
+        <div class='col1 center keyling-right'><p class="rubrik">Efter at Chris er blevet sat af af en ældre mand ved navn Jim Gallien. Chris' sidste stop inden hans død, bliver stamped trail. Han lever livet i en faldefærdig bus, som står på toppen af en mindre bakke ude i vildmarken. Chris ender med at dø, da han er så sulten, at han får spist nogle bær, der er uhyrre giftige for kroppen. Dog dør Chris med et smil på læben, på tråds af, at han er så undervægtig han kunne falde sammen, og på trods af, at han er helt alene. For dette var hvad Chris ønskede. </p></div>
+    </div>
+
+<!-- mapbox -->
+    
+<script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.44.1/mapbox-gl.js'></script>
+    
+    <script>
+mapboxgl.accessToken = 'pk.eyJ1IjoiamFobnNoaW56ZWwiLCJhIjoiY2pmamQxd2VpNHJxbzJ3cGV0eWYzMGttMSJ9.-2_h0Jxs89-UQgf_TlmuSQ';
+var map = new mapboxgl.Map({
+    container: 'map',
+    style: 'mapbox://styles/mapbox/streets-v9',
+    center: [-74.50, 40],
+    zoom: 9
+});
+
+document.getElementById('fly').addEventListener('click', function () {
+    // Fly to a random location by offsetting the point -74.50, 40
+    // by up to 5 degrees.
+    map.flyTo({
+        center: [
+            -74.50 + (Math.random() - 0.5) * 10,
+            40 + (Math.random() - 0.5) * 10]
+    });
+});
+</script>
+
+<!-- the map settings -->
+<script>
+
+    mapboxgl.accessToken = 'pk.eyJ1IjoiamFobnNoaW56ZWwiLCJhIjoiY2pmamQxd2VpNHJxbzJ3cGV0eWYzMGttMSJ9.-2_h0Jxs89-UQgf_TlmuSQ';
+    var map = new mapboxgl.Map({
+        container: 'map', // the container id
+        style: 'mapbox://styles/jahnshinzel/cjfjdzvm9fa1k2sk9b13cidxq', // your style
+        center: [-77.196463, 38.830443], // Aarhus (or somewhere else)
+        zoom: 15, // zoom
+        pitch: 5, // skew
+        bearing: -12 // rotation
+    });
+ 
+    /**
+    * Marker, simple
+    **/
+    var marker = new mapboxgl.Marker()
+    .setLngLat([-77.196463, 38.830443])
+    .addTo(map);
+    
+    
+</script>
+    
+    
+
+</body>
+</html> 
